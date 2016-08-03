@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<story>
+    <storyinfo>
+        <athor>John Fleck</athor>
+        <datewritten>Jun 2, 2002</datewritten>
+        <keyword>example keyword</keyword>
+    </storyinfo>
+    <body>
+        <headline>This is the headline</headline>
+        <para>This is the body text.</para>
+    </body>
+</story>
