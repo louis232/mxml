@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 # Prerequisites
 *.d
 #XML
 *.xml
 
+=======
+>>>>>>> a286f6bf3e47cd4556740b1694390ad1cda3f89c
 # Object files
 *.o
 *.ko
