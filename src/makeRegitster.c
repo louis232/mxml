@@ -1,7 +1,7 @@
 #include "common.h"
-#include <stdio.h>
-#include <mxml.h>
 #include <time.h>
+
+#include <mxml.h>
 
 int main(int argc, char *argv[])
 {
