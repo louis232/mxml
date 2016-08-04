@@ -11,6 +11,8 @@ int main(int argc, char *argv[])
     if(tree == NULL)
         err_quit("load from string error");
 
+    printf("xml data:%s\n", mxmlGetText(tree, NULL));
+
     FILE *fp = fopen("saveFromString.xml", "w+");
     mxmlSaveFile(tree, fp, MXML_NO_CALLBACK);
     fclose(fp);
