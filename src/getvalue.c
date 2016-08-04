@@ -5,14 +5,14 @@ void print_node(mxml_node_t *node);
 
 int main(int argc, char *argv[])
 {
-    mxml_node_t *xml;
+//    mxml_node_t *xml;
     mxml_node_t *data;
     mxml_node_t *node;
     mxml_node_t * group;
     mxml_node_t *child;
 
-    xml = mxmlNewXML("1.0");
-    data = mxmlNewElement(xml, "data");
+ //   xml = mxmlNewXML("1.0");
+    data = mxmlNewElement(NULL, "data");
 
     node = mxmlNewElement(data, "node");
     mxmlNewText(node, 0, "100");
@@ -25,7 +25,11 @@ int main(int argc, char *argv[])
     node = mxmlNewElement(group, "node");
     mxmlNewText(node, 0, "val4");
 
-    mxmlDelete(xml);
+    char buffer[1024] = {0};
+    mxmlSaveString(data, buffer, 1024, MXML_NO_CALLBACK);
+    printf("%s\n", buffer);
+
+    mxmlDelete(data);
 
     return 0;
 }
